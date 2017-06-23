@@ -1,0 +1,21 @@
+Title: Ethos Food Trading
+
+----
+
+Category: Web Design
+
+----
+
+Summary: 
+
+Ethos Food Trading is a company launched with the purpose of delivering the finest and most nutritious natural products from Greece and Cyprus, free from harmful pesticides and inherently rich in flavour. Ethos Food Trading are committed to sourcing products from local farmers who engage in sustainable and GMO-free farming.
+
+The main function of the website was to act as an informative portal for consumers and potential distributors, communicating the benefits of Ethos’ products and the company’s values. At the same time, it was essential for potential customers to be able to obtain a quotation, so we built an intuitive custom form to facilitate this task.
+
+----
+
+Link: http://www.ethosftc.com
+
+----
+
+Client: Ethos Food Trading

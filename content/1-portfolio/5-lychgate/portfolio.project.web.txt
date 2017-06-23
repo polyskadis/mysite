@@ -1,0 +1,21 @@
+Title: Lychgate
+
+----
+
+Category: Web Design
+
+----
+
+Summary: 
+
+Lychgate are an avant-garde Black Metal band based in the UK drawing on influences as diverse as 20th century classical music, musique concréte and 1950s–1970s-era cinema noir. Lychgate’s dense, atmospheric sound is characterised by layers of disharmonic guitars and variations in tempo, mood and dynamics that range from subdued and reflective to brooding and aggressive. The novel use of a church organ as a prominent instrument in Lychgate’s compositions elevates their music to other dimensions.
+
+The band required a website which would serve as an extensible archive of band information. News, concerts, album reviews, photographs and interviews documenting Lychgate’s progression would all be available on the website for perusal. As the majority of the content is text-based, careful attention was paid to the typography and inspiration for the design was drawn from 18th century letterpressed books and the dark, dystopian concepts explored on their albums.
+
+----
+
+Link: http://www.lychgate.eu
+
+----
+
+Client: Lychgate

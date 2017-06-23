@@ -1,0 +1,853 @@
+/*
+*
+* Design Temple Foundation Framework Styles
+* Copyright 2016 Design Temple
+* 29/08/2016
+*
+*/
+
+
+/* Table of Contents
+==================================================
+#Reset
+#Basic Styles
+#Site Styles
+#Typography
+#Links
+#Lists
+#Images
+#Buttons
+#Forms
+#Tables
+*/
+
+/* #Reset
+================================================== */
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/* #Basic Styles
+================================================== */
+.hidden {
+	display: none;
+}
+::selection {
+	background: blue;
+	color: white;
+}
+::-moz-selection {
+	background: blue;
+	color: white;
+}
+
+body {
+	background: #fff;
+	font-family: 'Nexa', Arial, sans-serif;
+	font-size: 100%;
+	line-height: 1.45;
+	color: #333;
+	font-weight: normal;
+	font-style: normal;
+	-moz-font-feature-settings:"calt", "liga", "clig", "kern";
+	-moz-font-feature-settings:"calt=1, liga=1, clig=1, kern=1";
+	-ms-font-feature-settings:"calt", "liga", "clig", "kern";
+	-o-font-feature-settings:"calt", "liga", "clig", "kern";
+	-webkit-font-feature-settings:"calt", "liga", "clig", "kern";
+	font-feature-settings:"calt", "liga", "clig", "kern";
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+}
+
+section {
+	padding: 3.5rem 0 2.5rem;
+	margin: 0;
+}
+article {
+	padding: 0;
+	margin: 0;
+}
+article img {
+	margin-bottom: 1.618rem;
+}
+
+header {
+	padding: 1.5rem 0;
+	margin: 0;
+	background: transparent;
+}
+
+footer {
+	padding: 1.5rem 0 0;
+	margin: 0;
+	background: #dddddd;
+}
+
+	footer .copyright {
+		display: block;
+		float: right;
+		text-align: right;
+	}
+
+		footer .copyright p {
+			margin-top: 1.25rem;
+			font-size: .886rem;
+		}
+
+	footer ul.social {
+		display: block;
+		float: left;
+		text-align: left;
+		font-size: 2.5rem;
+		border-radius: 5px;
+	}
+
+		footer ul.social li {
+			list-style: none;
+			display: inline;
+		}
+
+
+			footer ul.social li a:link,
+			footer ul.social li a:visited {
+				color: rgb(98,37,157);
+				margin-right: 1rem;
+			}
+
+			footer ul.social li a:hover,
+			footer ul.social li a:focus {
+				opacity: .8;
+			}
+/* #Typography
+================================================== */
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.998em;
+}
+
+h2 {font-size: 2.827em;}
+
+h3 {font-size: 1.999em;}
+
+h4 {font-size: 1.414em;}
+
+small, .font_small {font-size: 0.707em;}
+
+a img {
+	padding: 0;
+	margin: 0;
+}
+
+/* Default paragraph styles */
+p {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin-bottom: 1.3rem;
+	-moz-font-feature-settings:"ss01" 1, "ss02" 1;
+	-moz-font-feature-settings:"ss01=1", "ss02=1";
+	-ms-font-feature-settings:"ss01" 1, "ss02" 1;
+	-o-font-feature-settings:"ss01" 1, "ss02" 1;
+	-webkit-font-feature-settings:"ss01" 1, "ss02" 1;
+	font-feature-settings:"ss01" 1, "ss02" 1;
+	text-rendering: optimizeLegibility;
+}
+
+em, i {
+	font-style: italic;
+}
+strong, b {
+	font-weight: bold;
+}
+
+code {}
+kbd {}
+del {
+	text-decoration: line-through;
+}
+
+mark {
+	background: blue;
+}
+sub {
+	display: inline;
+	vertical-align: baseline;
+	font-size: 100%;
+	line-height: 100%;
+	-moz-font-feature-settings: "subs";
+	-moz-font-feature-settings: "subs=1";
+	-ms-font-feature-settings: "subs";
+	-o-font-feature-settings: "subs";
+	-webkit-font-feature-settings: "subs";
+	font-feature-settings: "subs";
+}
+sup {
+	display: inline;
+	vertical-align: baseline;
+	font-size: 100%;
+	line-height: 100%;
+	-moz-font-feature-settings: "sups";
+	-moz-font-feature-settings: "sups=1";
+	-ms-font-feature-settings: "sups";
+	-o-font-feature-settings: "sups";
+	-webkit-font-feature-settings: "sups";
+	font-feature-settings: "sups";
+}
+
+figure {
+	width: auto;
+	padding: 0;
+	margin: 0 0 1.25rem 0;
+}
+	figure img {
+		margin: 0;
+	}
+	figure img.border {
+		border: 1px solid black;
+	}
+
+figcaption {
+	border-top: 1px solid black;
+	font-size: 0.809rem;
+	line-height: 1.4;
+	color: black;
+	padding-top: 0.4rem;
+	margin: 1.618rem 0 0.809rem 0;
+}
+figcaption a:link, figcaption a:visited {
+	text-decoration: none;
+	border-bottom: 1px solid blue;
+}
+
+address {
+	display: inline;
+	line-height: 1.4;
+	margin-bottom: 1.618rem;
+}
+
+/* Blockquotes */
+blockquote {
+	font-size: 2.618rem;
+	line-height: 1.4;
+	border-left: 1px solid blue;
+	padding: 0.809rem 0 0.809rem 1.618rem;
+	margin: 2.618rem auto 2.618rem 1.618rem;
+}
+	blockquote p {
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		margin: 0;
+	}
+	blockquote cite {
+		position: relative;
+		display: block;
+		font-size: 1rem;
+		line-height: 1.4;
+		margin: 1.618rem 0 0 0;
+	}
+	blockquote cite a,
+	blockquote cite a:visited {}
+
+/* Horizontal Rule */
+
+hr {
+	border: 0;
+	height: 3px;
+	width: 100%;
+	background: blue;
+	margin-bottom: 1.618rem;
+}
+
+/* Abbreviations */
+abbr, acronym {
+	cursor: help;
+	text-transform: uppercase;
+	border-bottom: 1px dotted blue;
+}
+
+/* #Links
+================================================== */
+a, a:link, a:visited {
+	text-decoration: none;
+	color: blue;
+}
+	a:hover, a:focus, a:active {
+		text-decoration: none;
+		color: blue;
+	}
+
+p a, p a:link, p a:visited, cite a, cite a:visited {
+	color: blue;
+	border-bottom: 1px solid blue;
+	text-decoration: none;
+	-webkit-transition: all 539ms ease-in;
+	-moz-transition: all 539ms ease-in;
+	-o-transition: all 539ms ease-in;
+	transition: all 539ms ease-in;
+}
+
+p a:hover, p a:active, cite a:hover, cite a:active {
+	color: #9478bf;
+	border-color: #9478bf;
+	-webkit-transition: all 161ms ease-out;
+	-moz-transition: all 161ms ease-out;
+	-o-transition: all 161ms ease-out;
+	transition: all 161ms ease-out;
+}
+
+
+/* #Lists
+================================================== */
+/* Lists */
+ul, ol, dl {
+	font-size: 1rem;
+	line-height: 1.4;
+	margin: 0 auto 1.618rem 2.618rem;
+	list-style-position: outside;
+	font-family: inherit;
+	-moz-font-feature-settings:"ss01" 1, "ss02" 1;
+	-moz-font-feature-settings:"ss01=1", "ss02=1";
+	-ms-font-feature-settings:"ss01" 1, "ss02" 1;
+	-o-font-feature-settings:"ss01" 1, "ss02" 1;
+	-webkit-font-feature-settings:"ss01" 1, "ss02" 1;
+	font-feature-settings:"ss01" 1, "ss02" 1;
+}
+
+	ul li {
+		margin: 0;
+		padding-left: 0;
+		list-style: disc;
+	}
+
+	ol li {
+		margin: 0;
+		padding-left: 0.4rem;
+		list-style: decimal;
+	}
+
+ul li span, ol li span {
+	color: #000;
+}
+
+ul.no-bullet {
+	list-style: none;
+}
+
+
+
+
+/* Ordered Lists */
+ol {}
+
+ol li ul, ol li ol {
+	margin-left: 1.618rem;
+}
+
+/* Definition Lists */
+dl dt {
+	margin-bottom: 0.3rem;
+	font-weight: bold;
+}
+
+dl dd {
+	margin-bottom: 0.75rem;
+}
+
+/* #Buttons
+================================================== */
+
+button, .button {
+	display: block;
+	font-size: 1rem;
+	font-family: 'Nexa';
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1;
+	text-align: center;
+	width: 100%;
+    outline: none;
+    cursor: pointer;
+	padding: 1.618rem;
+	margin: 0 0 1.618rem 0;
+	-webkit-transition: all 539ms ease-out;
+	-moz-transition: all 539ms ease-out;
+	-o-transition: all 539ms ease-out;
+	transition: all 539ms ease-out;
+	zoom: 1;
+}
+
+button:hover, button:active, .button:hover, .button:active {
+	text-decoration: none;
+	-webkit-transition: all 161ms ease-in;
+	-moz-transition: all 161ms ease-in;
+	-o-transition: all 161ms ease-in;
+	transition: all 161ms ease-in;
+	zoom: 1;
+}
+	button.primary, .button.primary, button[type="submit"], input[type="submit"], input[type="button"] {
+		color: white;
+		border: 2px solid blue;
+		background: blue;
+	}
+	button.primary:hover, .button.primary:hover, button[type="submit"]:hover, input[type="submit"]:hover, input[type="button"]:hover {
+		color: white;
+		border-color: #9478bf;
+		background: #9478bf; /* Old browsers */
+	}
+	button.secondary, .button.secondary, input[type="reset"] {
+		background: white;
+		border: 2px solid blue;
+		color: blue;
+	}
+		button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus, input[type="reset"]:hover {
+			background: white;
+			color: #9478bf;
+			border-color: #9478bf;
+		}
+
+	button.secondary.dark, .button.secondary.dark, input[type="reset"].dark {
+	    background:rgba(255, 255, 255, 0.15);
+		border: 2px solid white;
+		color: white;
+	}
+		button.secondary:hover.dark, button.secondary:focus.dark, .button.secondary:hover.dark, .button.secondary:focus.dark, input[type="reset"]:hover.dark {
+			background: white;
+			color: blue;
+			border-color: white;
+		}
+
+		button.disabled, .button.disabled, .button[disabled], .button.primary[disabled], .button.secondary[disabled], button.primary[disabled], button.secondary[disabled] {
+			background-color: #999b9c;
+			border-color: #999b9c;
+			color: black;
+			cursor: not-allowed;
+	}
+			button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {}
+
+
+/* #Forms
+================================================== */
+
+/* We use this to get basic styling on all basic form elements */
+select,
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="week"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+    outline: none;
+	font-family: 'Nexa';
+	-webkit-transition: background-color 539ms ease-out, border-color 539ms ease-out, color 539ms ease-out;
+	-moz-transition: background-color 539ms ease-out, border-color 539ms ease-out, color 539ms ease-out;
+	-o-transition: background-color 539ms ease-out, border-color 539ms ease-out, color 539ms ease-out;
+	transition: background-color 539ms ease-out, border-color 539ms ease-out, color 539ms ease-out;
+	-webkit-appearance: none;
+	border-radius: 0;
+	background-color: white;
+	border: 1px solid #000;
+	color: #000;
+	display: inline-block;
+	font-size: 1rem;
+	padding: 0.8rem;
+	margin: 0 0 1.618rem 0;
+	width: 100%;
+	resize: none;
+}
+
+textarea {
+	min-height: 6.854rem;
+}
+
+::-webkit-input-placeholder {
+   color: #999b9c;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #999b9c;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #999b9c;
+}
+
+:-ms-input-placeholder {
+   color: #999b9c;
+}
+
+	[placeholder]:focus::-ms-input-placeholder {
+		transition: opacity 161ms ease-in;
+		opacity: 0;
+	}
+
+	[placeholder]:focus::-webkit-input-placeholder {
+		-webkit-transition: opacity 161ms ease-in;
+		opacity: 0;
+	}
+
+	[placeholder]:focus::-moz-input-placeholder {
+		-moz-transition: opacity 161ms ease-in;
+		opacity: 0;
+	}
+
+	[placeholder]:focus::input-placeholder {
+		transition: opacity 161ms ease-in;
+		opacity: 0;
+	}
+
+
+	select:focus,
+	input[type="text"]:focus,
+	input[type="password"]:focus,
+	input[type="date"]:focus,
+	input[type="datetime"]:focus,
+	input[type="datetime-local"]:focus,
+	input[type="month"]:focus,
+	input[type="week"]:focus,
+	input[type="email"]:focus,
+	input[type="number"]:focus,
+	input[type="search"]:focus,
+	input[type="tel"]:focus,
+	input[type="time"]:focus,
+	input[type="url"]:focus,
+	textarea:focus {
+		-webkit-transition: background-color 161ms ease-out, border-color 161ms ease-out, color 161ms ease-out;
+		-moz-transition: background-color 161ms ease-out, border-color 161ms ease-out, color 161ms ease-out;
+		-o-transition: background-color 161ms ease-out, border-color 161ms ease-out, color 161ms ease-out;
+		transition: background-color 161ms ease-out, border-color 161ms ease-out, color 161ms ease-out;
+		color: blue;
+		border-color: blue;
+		background: #efe9f5;
+		box-shadow: none;
+}
+	select:disabled,
+	input[type="text"][disabled], fieldset[disabled] input[type="text"],
+	input[type="password"][disabled], fieldset[disabled]
+	input[type="password"],
+	input[type="date"][disabled], fieldset[disabled]
+	input[type="date"],
+	input[type="datetime"][disabled], fieldset[disabled]
+	input[type="datetime"],
+	input[type="datetime-local"][disabled], fieldset[disabled]
+	input[type="datetime-local"],
+	input[type="month"][disabled], fieldset[disabled]
+	input[type="month"],
+	input[type="week"][disabled], fieldset[disabled]
+	input[type="week"],
+	input[type="email"][disabled], fieldset[disabled]
+	input[type="email"],
+	input[type="number"][disabled], fieldset[disabled]
+	input[type="number"],
+	input[type="search"][disabled], fieldset[disabled]
+	input[type="search"],
+	input[type="tel"][disabled], fieldset[disabled]
+	input[type="tel"],
+	input[type="time"][disabled], fieldset[disabled]
+	input[type="time"],
+	input[type="url"][disabled], fieldset[disabled]
+	input[type="url"],
+	textarea[disabled], fieldset[disabled] {
+		background-color: #efefef;
+		border-color: #999b9c;
+		color: #999b9c;
+		cursor: not-allowed;
+}
+
+/* Respect enforced amount of rows for textarea */
+textarea[rows] {
+	height: auto;
+}
+
+/* Add height value for select elements to match text input height */
+select {
+	background-image: url(../images/icons/down.svg);
+	background-repeat: no-repeat;
+	background-position: 99% center;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+	select:focus {
+		background-image: url(../images/icons/down.svg);
+		background-repeat: no-repeat;
+		background-position: 99% center;
+	}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+	display: inline-block;
+	margin-left: 0.5rem;
+	margin-right: 1rem;
+	margin-bottom: 0;
+	vertical-align: baseline;
+}
+
+/* Normalize file input width */
+input[type="file"] {
+	width: 100%;
+}
+
+/* We add basic fieldset styling */
+fieldset {
+	border: 1px solid #dddddd;
+	padding: 1.618rem;
+	margin: 1.618rem 0;
+}
+	fieldset legend {
+		font-family: 'Nexa';
+		padding: 0 0.1875rem;
+		margin: 0;
+		margin-left: -0.1875rem;
+}
+
+/* Label Styles */
+label {
+	font-size: 1rem;
+	line-height: 1;
+	color: #000;
+	display: inline-block;
+	padding: 0 1.618rem 0 0;
+	margin: 1rem 0 1rem 0;
+	height: 1.618rem;
+	font-weight: bold;
+	margin-bottom: 0;
+	/* Styles for required inputs */
+}
+input:focus ~ label {
+    color: blue;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+@-moz-document url-prefix() {
+	  /* If you use a background image */
+	  select {
+		 background-image: none;
+	  }
+	  	select:focus {
+			background-image: none;
+		}
+  }
+
+  /* If you use a wrapper label with :after */
+  .select-label:after {
+    content: none;
+  }
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+@-moz-document url-prefix() {
+	select {}
+
+	select:hover {}
+}
+
+/* #Tables
+================================================== */
+
+table {
+	width: 100%;
+	background: #f7f7f7;
+	border: 1px solid #000;
+	margin: 0 auto 0 auto;
+	vertical-align: middle;
+	line-height: 1;
+	color: #000;
+}
+	table th td {
+		padding: 0.4rem;
+	}
+	table caption {}
+	table thead {}
+		table thead tr td {
+			padding: 0.4rem;
+		}
+	table tfoot {}
+		table tfoot tr th,
+		table tfoot tr td {
+			padding: 0;
+	}
+	table tr th,
+	table tr td {}
+	table tr.even, table tr.alt, table tr:nth-of-type(even) {
+		background: #eee9f5;
+}
+	table thead tr th,
+	table tfoot tr th,
+	table tfoot tr td,
+	table tbody tr th,
+	table tbody tr td,
+	table tr td {
+		padding: auto;
+		vertical-align: middle;
+}
+
+/* #Nav Styles
+================================================== */
+
+nav ul {
+	display: block;
+	float: right;
+	margin-top: 1.25rem;
+	font-family: 'NexaBold';
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+	nav ul li {
+		list-style: none;
+		display: inline;
+		text-align: right;
+		margin-left: 1.25rem;
+	}
+
+	nav ul li a:link,
+	nav ul li a:visited {
+		color: #333;
+		padding: .75rem .75rem .5rem;
+	}
+
+	nav ul li a:hover,
+	nav ul li a:focus {
+		background: rgb(98,37,157);
+		color: white;
+		border-radius: 5px;
+	}
+
+	nav ul li a.active {
+		color: rgb(98,37,157);
+	}
+
+	nav ul li a.active:hover,
+	nav ul li a.active:focus {
+		color: #fff;
+	}
+
+/* #Layout Styles
+================================================== */
+
+
+section h2 {
+	text-align: center;
+	font-family: 'NexaBold';
+	font-size: 1.999em;
+	text-transform: uppercase;
+	margin-bottom:2.5rem;
+}
+
+section.none {
+	padding:0;margin:0;
+}
+
+section.intro,
+section.between {
+	background:linear-gradient(rgba(61,61,61,0.72),rgba(61,61,61,0.72)), url('../images/backintro.png') center center no-repeat;
+	background-size: cover;
+	padding: 2.5rem 0;
+	color: #fff;
+	text-align: center;
+}
+
+section.between {
+	background:linear-gradient(rgba(61,61,61,0.72),rgba(61,61,61,0.72)), url('../images/backtween.png') center center no-repeat;
+}
+
+	section.between h2 {
+		color: #fff;
+		text-align: center;
+		font-family: 'NexaHeavy';
+		font-size: 1.999em;
+		text-transform: uppercase;
+		margin: 1.5rem 0 5rem;
+	}
+
+	section.between h3 {
+		font-size: 1.414em;
+		font-family: 'NexaHeavy';
+		margin-bottom: 1.5rem;
+	}
+
+	section.between p {
+		padding:0 1rem;
+	}
+
+	section.between img {
+		height: 100px;
+	}
+
+	section.intro h1 {
+		margin-top:3.5rem;
+		font-family: 'NexaHeavy';
+		font-size: 2.827rem;
+	}
+
+		section.intro p {
+			font-size: 1.414rem;
+			font-weight: 400;
+		}
+
+		section.intro a:link,
+		section.intro a:visited,
+		section.between a:link,
+		section.between a:visited {
+			font-size: 1rem;
+			font-family: 'NexaLight';
+			margin-top:2.5rem;
+			padding: 1.5rem 2rem;
+			background: rgb(98,37,157);
+			color: white;
+			text-align: center;
+			letter-spacing: 2px;
+			border-radius: 5px;
+		}
+
+		section.intro a:hover,
+		section.intro a:focus,
+		section.between a:focus,
+		section.between a:hover {
+			background: rgba(98,37,157,.5);
+		}
+
+
+a.showcase-link,
+a.showcase-link:link,
+a.showcase-link:visited {
+	padding:0!important;
+	margin:0!important;
+}
+
+a.showcase-link:hover,
+a.showcase-link:active {
+	opacity: .72;
+	padding:0!important;
+	margin:0!important;	
+}
+
+img.showcase {
+	padding:0!important;
+	margin:0!important;	
+}

@@ -1,0 +1,21 @@
+Title: Zen Studios
+
+----
+
+Category: Web Design
+
+----
+
+Summary: 
+
+Zen Studios is Cyprus’ premier recording studio and music production facility. Designed and built from the ground-up, Zen Studios is a sprawling facility boasting three visually-linked recording rooms, two control rooms, complete analog as well as digital recording setups and a wide selection of instruments and equipment.
+
+The inspiration for the website was the studio space itself and its angular architecture. We expressed Zen Studio’s brutalist aesthetic using greys, texture and monospaced type and placed emphasis on the experience of the interior space of each studio room with rich photography.
+
+----
+
+Link: http://www.zenstudios.com.cy
+
+----
+
+Client: Zen Production Studios
